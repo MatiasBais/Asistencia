@@ -22,7 +22,7 @@ namespace Asistencia
         }
         private string cadenaconexion()
         {
-            string caca = "database=asistencia3;data source=localhost; user id=root";
+            string caca = "database=asistencia3;data source=localhost; user id=root; password=root";
             return caca;
         }
 

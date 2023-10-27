@@ -21,7 +21,7 @@ namespace Asistencia
         }
         private string cadenaconexion() 
         {
-            string caca = "data source=localhost;database=asistencia3;user id = root";
+            string caca = "data source=localhost;database=asistencia3;user id = root; password=root";
            return caca;
         }
         private void Form1_Load(object sender, EventArgs e)
@@ -72,7 +72,10 @@ namespace Asistencia
                     t_dni.Text = "";
                     t_tel.Text = "";
                 }
-                
+                button1.Visible=false;
+                button2.Visible = true;
+                button3.Visible = true;
+                button4.Visible = true;
             }
         }
         private void button1_Click(object sender, EventArgs e)
@@ -130,6 +133,7 @@ namespace Asistencia
                 button1.Visible = true;
                 button2.Visible = false;
                 button3.Visible = false;
+            button4.Visible = false;
             }
         private void button3_Click(object sender, EventArgs e)
         {
@@ -154,6 +158,7 @@ namespace Asistencia
                 button1.Visible = true;
                 button2.Visible = false;
                 button3.Visible = false;
+            button4.Visible = false;
         }
 
         private void t_tel_TextChanged(object sender, EventArgs e)
@@ -169,6 +174,7 @@ namespace Asistencia
             button1.Visible = true;
             button2.Visible = false;
             button3.Visible = false;
+            button4.Visible = false;
             
         }
         }
